@@ -14,13 +14,13 @@ export default class App extends Component {
   };
 
   showStatics = () => {
-    this.setState(prev => ({ prev, isShowStatics: true }));
+    this.setState(prev => ({ isShowStatics: true }));
   };
 
   good = () => {
     this.showStatics();
     this.setState((prevState) => (
-      { prevState, good: prevState.good += 1 }
+      { good: prevState.good += 1 }
     ));
   };
 
@@ -28,14 +28,14 @@ export default class App extends Component {
     this.showStatics();
     this.setState(
       (prevState) => (
-        { prevState, neutral: prevState.neutral += 1 }
+        { neutral: prevState.neutral += 1 }
       ));
   };
 
   bad = () => {
     this.showStatics();
     this.setState((prev) => (
-      { prev, bad: prev.bad += 1 }
+      { bad: prev.bad += 1 }
     ));
   };
 
